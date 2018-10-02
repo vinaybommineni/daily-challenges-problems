@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+#define ll long long
 using namespace std;
 
 int main()
@@ -9,9 +9,9 @@ int main()
     for(i=0;i<p;i++)
     {
         string n,m;
-        long long int y = 0,u,g = 0;
+        ll int y = 0,u,g = 0;
         cin >> n >> m;
-        long long int k = n.size();
+        ll int k = n.size();
         long int l = m.size();
         for(int j=0;j<k;j++)
         {
@@ -21,7 +21,7 @@ int main()
         {
             y = y + (m[u] - 48);
         }
-        long long int f = ((g%3)*(y%3))%3;
+        ll int f = ((g%3)*(y%3))%3;
         cout << f << endl;
     }
     return 0;
